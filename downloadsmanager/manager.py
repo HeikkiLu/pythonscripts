@@ -1,9 +1,9 @@
 import os
 import shutil
-from os import walk
 from pathlib import Path
 
-downloads_folder = "/home/luigi/Downloads/"
+home = str(Path.home())
+downloads_folder = home+"/Downloads/"
 
 # List all files in downloads folder
 def move_files():
